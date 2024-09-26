@@ -12,8 +12,6 @@ from utils.permissions import IsOwnerOrReadOnly
 
 
 
-
-
 # Create your views here.
 
 # Path for this view: /books
@@ -23,7 +21,7 @@ class RestaurantListCreateView(APIView):
     # Index Route
     @handle_exceptions
     def get(self, request):
-        restaurants = Restaurant.objects.all() # Model.find() equivalent
+        restaurants = Restaurant.objects.all() 
         serialized_restaurants = PopulatedRestaurantSerializer(restaurants, many=True) 
         return Response(serialized_restaurants.data)
 

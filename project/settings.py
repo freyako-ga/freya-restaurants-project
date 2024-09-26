@@ -114,6 +114,7 @@ DATABASES = {
         default=env('DB_URI'),
         conn_max_age=600,
         ssl_require=True,
+
     )
 }
 
