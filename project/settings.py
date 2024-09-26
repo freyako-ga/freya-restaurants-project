@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'restaurants',
     'reviews',
     'cuisines',
-    'corsheaders',
+    # 'corsheaders',
 ]
 
 REST_FRAMEWORK = {
