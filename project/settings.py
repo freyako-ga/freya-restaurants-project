@@ -154,6 +154,9 @@ USE_TZ = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOW_ORIGINS=[
+    'https://freya-restaurants-project-5f499a9dbaf2.herokuapp.com/'
+]
 
 CORS_ALLOW_METHODS = [
     "DELETE",
@@ -171,7 +174,8 @@ CORS_ALLOW_HEADERS = [
     "x-csrftoken",
     "x-requested-with",
 ]
-
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_HEADERS = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
