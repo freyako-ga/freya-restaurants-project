@@ -177,6 +177,11 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_HEADERS = True
 
+ALLOW_ORIGINS= ['https://freya-restaurants-project-5f499a9dbaf2.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS= ['https://freya-restaurants-project-5f499a9dbaf2.herokuapp.com/', 'http://127.0.0.1:8000']
+
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
@@ -188,3 +193,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 django_on_heroku.settings(locals())
+
+
